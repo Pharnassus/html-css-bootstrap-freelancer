@@ -38,6 +38,7 @@
 
 #ms_portfolio{
   background-color: white;
+  text-align: center;
 }
 #ms_portfolio [class*="col-"]{
   background-color: white;
