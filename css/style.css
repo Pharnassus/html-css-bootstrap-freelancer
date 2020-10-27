@@ -5,6 +5,38 @@
 }
 body{
   color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+}
+h1{
+  font-size: 1.6em;
+  font-weight: 700;
+}
+h2{
+  font-size: 1.2em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+h3{
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: 700;
+  line-height: 65px;
+}
+p{
+  font-size: 0.5em;
+  font-weight: 500;
+}
+a{
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.4em;
+  font-weight: 700;
+  line-height: 80px;
+}
+a:hover{
+  color: white;
+  text-decoration: none;
 }
 .ms_list_line{
   list-style: none;
@@ -27,22 +59,16 @@ body{
   left: 0;
   width: 100%;
   z-index: 2;
-  line-height: 80px;
+  /* line-height: 80px; */
   height: 80px;
   background-color: #2C3E50;
 }
 .ms_header_top .container{
   height: 80px;
 }
-.ms_header_top .row{
-  height: 100%;
-}
-.ms_header_top [class*="col-"]{
-  height: 100%;
-}
-.ms_header_top h3{
-  margin: 0;
-  line-height: 80px;
+.ms_header_top li a:hover{
+  color: #1ABC9C;
+  text-decoration: none;
 }
 /* /header_top */
 
@@ -53,19 +79,69 @@ body{
   background-color: #1ABC9C;
 }
 .ms_jumbotron img{
-  width: 200px;
+  width: 250px;
 }
-.ms_jumbotron h1{
-  margin-top: 0;
+/* -------------------------FANCY STAR-------------------------*/
+.ms_fancy_star {
+  line-height: 0.5em;
+  text-align: center;
+  padding: 15px 0 30px 0;
 }
+.ms_fancy_star span {
+  display: inline-block;
+  position: relative;
+}
+.ms_fancy_star span:before,
+.ms_fancy_star span:after {
+  content: "";
+  position: absolute;
+  height: 20px;
+  border-bottom: 5px solid white;
+  width: 110px;
+}
+.ms_fancy_star span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.ms_fancy_star span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+/* ------------------------/FANCY STAR-------------------------*/
 /* /jumbotron */
 
+
 /* ms_portfolio */
+#ms_portfolio{
+  margin-bottom: 65px;
+}
+#ms_portfolio h2{
+  color: #2C3E50;
+  margin-top: 65px;
+}
+#ms_portfolio .ms_fancy_star{
+  color: #2C3E50;
+}
+#ms_portfolio .ms_fancy_star_blue span:before,
+#ms_portfolio .ms_fancy_star_blue span:after {
+  content: "";
+  position: absolute;
+  height: 20px;
+  border-bottom: 5px solid #2C3E50;
+  width: 110px;
+}
 .ms_portfolio_item{
-  background-color: #1ABC9C;
+  text-align: center;
+  /* background-color: #1ABC9C; */
   height: 300px;
+  line-height: 292px;
+  vertical-align: middle;
   border-radius: 5px;
-  margin-bottom: 30px;
+}
+.ms_portfolio_item img{
+  max-height: 240px;
+  min-width: 290px;
+  border-radius: 7px;
 }
 /* /ms_portfolio */
 
