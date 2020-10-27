@@ -53,7 +53,7 @@ a:hover{
 .ms_list_line{
   list-style: none;
   display: inline-block;
-  padding-inline-start: 0px;
+  padding-inline-start: 0;
 }
 .ms_list_line li{
   display: inline-block;
@@ -202,7 +202,30 @@ a:hover{
   border-bottom: 5px solid #2C3E50;
   width: 110px;
 }
-
+.ms_input_contact{
+  margin-top: 40px;
+  width: 100%;
+  border-bottom: 2px solid #E9ECEF;
+}
+.ms_input_contact .form-control{
+  border: none;
+  box-shadow: none;
+  padding: 0 0 30px 0;
+  color: #6C7585;
+  font-size: 0.6em;
+  font-weight: 500;
+}
+#ms_contact .ms_my_button{
+  margin-top: 25px;
+  font-size: 0.4em;
+  font-weight: 500;
+  padding: 22px 30px;
+  border: none;
+}
+#ms_contact .ms_my_button:hover{
+  background-color: #159A80;
+  color: white;
+}
 /* /ms_contact */
 
 /* ms_footer_top */
