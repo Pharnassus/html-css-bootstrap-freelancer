@@ -1,135 +1,117 @@
 [class*="col-"]{
-  min-height: 80px;
+  /* min-height: 80px; */
   /* background-color: gray; */
   /* border: 1px solid black; */
 }
-.ms_container90{
-  width: 90%;
-  margin: auto;
+body{
+  color: white;
 }
-.ms_container70{
-  width: 70%;
-  margin: auto;
+.ms_list_line{
+  list-style: none;
+  display: inline-block;
+  padding-inline-start: 0px;
+}
+.ms_list_line li{
+  display: inline-block;
+  padding: 0 10px;
+}
+.ms_wrapper_60{
+  width: 60%;
+  margin: 0 auto;
 }
 
-
-#ms_navbar{
+/* header_top */
+.ms_header_top{
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 2;
   width: 100%;
+  z-index: 2;
+  line-height: 80px;
   height: 80px;
   background-color: #2C3E50;
-  color: #FFFFFF;
-  text-transform: uppercase;
 }
-#ms_navbar .row div:last-child{
-  text-align: right;
+.ms_header_top .container{
+  height: 80px;
 }
+.ms_header_top .row{
+  height: 100%;
+}
+.ms_header_top [class*="col-"]{
+  height: 100%;
+}
+.ms_header_top h3{
+  margin: 0;
+  line-height: 80px;
+}
+/* /header_top */
 
-#ms_jumbotron [class*="col-"]{
-  background-color: #1ABC9C;
-  color: #FFFFFF;
-  text-transform: uppercase;
-  text-align: center;
+/* jumbotron */
+.ms_jumbotron{
   margin-top: 80px;
-}
-
-#ms_portfolio{
-  background-color: white;
-  text-align: center;
-}
-#ms_portfolio [class*="col-"]{
-  background-color: white;
-  color: #2C3E50;
-  text-transform: uppercase;
-}
-
-#ms_about{
+  padding: 80px 0;
   background-color: #1ABC9C;
-  text-align: center;
-  color: white;
-  margin-top: 25px;
 }
-#ms_about  p{
-  text-align: left;
+.ms_jumbotron img{
+  width: 200px;
 }
+.ms_jumbotron h1{
+  margin-top: 0;
+}
+/* /jumbotron */
 
-#ms_contact-me{
-  text-align: center;
-  color: #333333;
+/* ms_portfolio */
+.ms_portfolio_item{
+  background-color: #1ABC9C;
+  height: 300px;
+  border-radius: 5px;
+  margin-bottom: 30px;
 }
-#ms_contact-me ul{
-  list-style: none;
-  padding-inline-start: 0px;
-  text-align: left;
-}
-#ms_contact-me li:not(:first-child){
-  border-top: 1px solid #D2D2D2;
-}
+/* /ms_portfolio */
 
-#footer{
-  text-align: center;
-  background-color: #496178;
-  color: white;
+/* ms_about */
+#ms_about{
+  padding: 80px 0;
+  background-color: #1ABC9C;
 }
-#footer ul{
-  list-style: none;
-  padding-inline-start: 0px;
+/* /ms_about */
+
+/* ms_contact */
+#ms_contact{
+  background: white;
+  padding: 80px 0;
 }
-#footer li{
-  display: inline-block;
+/* /ms_contact */
+
+/* ms_footer_top */
+.ms_footer_top{
+  background-color: #2C3E50;
+  padding: 60px 0;
 }
-#footer .container-fluid.copyright{
-  background: #3A546D;
+/* /footer_top */
+
+/* ms_footer_bottom */
+.ms_footer_bottom{
+  background-color: #1A252F;
+  padding: 30px 0;
 }
+/* /ms_footer_bottom */
 
 
 /* QUERIES */
-
 @media screen and (min-width: 1200px){
-
-  .col-lg-4{
-    padding: 15px;
-  }
-  .ms_img-portfolio{
-    background-color: green;
-    height: 200px;
-  }
 
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px){
 
-  .col-md-4{
-    padding: 15px;
-  }
-  .ms_img-portfolio{
-    background-color: green;
-    height: 200px;
-  }
-
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px){
-
-  .col-sm-6{
-    padding: 15px;
-  }
-  .ms_img-portfolio{
-    background-color: green;
-    height: 200px;
-  }
 
 }
 
 @media screen and (max-width: 767px){
 
-  #ms_portfolio .col-xs-12{
-    margin-top: 15px;
-    background-color: green;
-    height: 200px;
-  }
 
 }
