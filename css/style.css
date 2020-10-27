@@ -210,12 +210,41 @@ a:hover{
   background-color: #2C3E50;
   padding: 60px 0;
 }
+.ms_footer_top h4{
+  font-size: 0.6em;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.ms_footer_top a i{
+  width: 48px;
+  padding: 8px;
+  font-size: 25px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+.ms_footer_top a i:hover{
+  background-color: white;
+  color: #2C3E50;
+}
+.ms_footer_top p a{
+  font-size: 1em;
+  font-weight: 500;
+  color: #1ABC9C;
+  text-transform: capitalize;
+  line-height: 15px;
+}
+.ms_footer_top p a:hover{
+  color: #117960;
+  text-decoration: underline;
+}
 /* /footer_top */
 
 /* ms_footer_bottom */
 .ms_footer_bottom{
   background-color: #1A252F;
   padding: 30px 0;
+  font-size: 0.3em;
+  font-weight: 400;
 }
 /* /ms_footer_bottom */
 
