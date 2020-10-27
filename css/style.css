@@ -1,3 +1,7 @@
+.ms_portfolio_item:hover .layover{
+  display: block;
+}
+
 [class*="col-"]{
   /* min-height: 80px; */
   /* background-color: gray; */
@@ -38,6 +42,14 @@ a:hover{
   color: white;
   text-decoration: none;
 }
+.ms_my_button{
+  color: white;
+  background-color: #1ABC9C;
+  font-weight: 700;
+  font-size: 0.8em;
+  border: 1px solid #2C3E50;
+  padding: 13px 17px
+}
 .ms_list_line{
   list-style: none;
   display: inline-block;
@@ -58,7 +70,7 @@ a:hover{
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 3;
   /* line-height: 80px; */
   height: 80px;
   background-color: #2C3E50;
@@ -130,6 +142,7 @@ a:hover{
   border-bottom: 5px solid #2C3E50;
   width: 110px;
 }
+
 .ms_portfolio_item{
   text-align: center;
   /* background-color: #1ABC9C; */
@@ -150,6 +163,23 @@ a:hover{
   padding: 80px 0;
   background-color: #1ABC9C;
 }
+#ms_about p{
+  line-height: 30px;
+  font-size: 0.4em;
+}
+#ms_about .row.ms_about_button{
+  text-align: center;
+  margin-top: 20px;
+}
+#ms_about .ms_my_button{
+  border: 2px solid white;
+  font-size: 0.5em;
+  font-weight: 500;
+  padding: 20px 25px;
+}
+#ms_about .ms_my_button:hover{
+  background-color: white;
+}
 /* /ms_about */
 
 /* ms_contact */
@@ -157,6 +187,22 @@ a:hover{
   background: white;
   padding: 80px 0;
 }
+#ms_contact h2{
+  color: #2C3E50;
+  margin-top: 15px;
+}
+#ms_contact .ms_fancy_star{
+  color: #2C3E50;
+}
+#ms_contact .ms_fancy_star_blue span:before,
+#ms_contact .ms_fancy_star_blue span:after {
+  content: "";
+  position: absolute;
+  height: 20px;
+  border-bottom: 5px solid #2C3E50;
+  width: 110px;
+}
+
 /* /ms_contact */
 
 /* ms_footer_top */
@@ -189,5 +235,8 @@ a:hover{
 
 @media screen and (max-width: 767px){
 
+  h3{
+    font-size: 0.9em;
+  }
 
 }
