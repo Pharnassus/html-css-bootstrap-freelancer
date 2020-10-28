@@ -144,17 +144,34 @@ a:hover{
 }
 
 .ms_portfolio_item{
-  text-align: center;
-  /* background-color: #1ABC9C; */
-  height: 300px;
-  line-height: 292px;
-  vertical-align: middle;
-  border-radius: 5px;
+  background-color: #1ABC9C;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  overflow: hidden;
 }
 .ms_portfolio_item img{
-  max-height: 240px;
-  min-width: 290px;
-  border-radius: 7px;
+  width: 100%;
+}
+.ms_portfolio_item .ms_layover{
+  position: absolute;
+  top: 0;
+  left: 14px;;
+  width: 93%;
+  height: 90%;
+  background-color: rgba(26, 188, 156, 0.8);
+  opacity: 0;
+  border-radius: 8px;
+}
+.ms_layover i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  cursor: pointer;
+}
+.ms_portfolio_item:hover .ms_layover{
+  opacity: 1;
 }
 /* /ms_portfolio */
 
